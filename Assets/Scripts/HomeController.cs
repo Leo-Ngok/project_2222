@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HomeController : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,11 @@ public class HomeController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F1))
         {
-
+            Btn_Entry_Click();
         }
         else if(Input.GetKeyDown(KeyCode.F10))
         {
-
+            Btn_Settings_Click();
         }
         else if(Input.GetKeyDown(KeyCode.Escape))
         {
@@ -29,11 +31,11 @@ public class HomeController : MonoBehaviour
     }
     public void Btn_Entry_Click()
     {
-        
+        SceneManager.LoadScene(Scenes.Home);
     }
     public void Btn_Settings_Click()
     {
-        
+        SceneManager.LoadScene(Scenes.Settings);
     }
     public void Btn_Exit_Click()
     {
