@@ -31,7 +31,7 @@ public class HomeController : MonoBehaviour
     }
     public void Btn_Entry_Click()
     {
-        SceneManager.LoadScene(Scenes.Home);
+        SceneManager.LoadScene(Scenes.Level1);
     }
     public void Btn_Settings_Click()
     {
